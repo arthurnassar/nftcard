@@ -1,0 +1,152 @@
+/* Fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Colors */
+:root{
+
+/* ### Primary */
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: rgb(0, 255, 247);
+
+/* ### Neutral */
+    --veryDarkBlue: hsl(217, 54%, 11%); /* (main BG) */
+    --veryDarkBlue2: hsl(216, 50%, 16%); /*  (card BG) */
+    --veryDarkBlue3: hsl(215, 32%, 27%); /*  (line) */
+    --colorWhite: hsl(0, 0%, 100%)
+}
+
+
+/* Mobile First */
+
+* {
+    font-family: "Outfit";
+    font-size: 16px;
+}
+
+body {
+    width: 375px;
+    margin:auto;
+    background: var(--veryDarkBlue);
+}
+
+main {
+    background-color: var(--veryDarkBlue2);
+    width: 75%;
+    margin: 25% auto;
+    transform: translateX(-1%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#img-container {
+    border-radius: 8px;
+    height: 281px;
+    position: relative;
+}
+
+img {
+    margin: auto;
+    width: 100%;
+    border-radius: 8px;
+    z-index: -100;
+}
+
+/* #img-card:hover {
+    background-color: rgba(0, 255, 247, 0.9);
+    cursor: pointer;
+} */
+
+#hover-color {
+     border-radius: 8px;
+    height: 281px;
+    z-index: 1;
+    position:relative;
+    bottom: 285px;
+}
+
+#hover-color:hover {
+    background-color: rgba(0, 255, 247, 0.3);
+    border-radius: 8px;
+    height: 281px;
+    position: relative;
+    z-index: 1;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+
+h2 {
+    color:var(--colorWhite);
+    font-size: 22px;
+}
+
+h2:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+p {
+    color: var(--softBlue);
+}
+
+span {
+    color: var(--colorWhite);
+}
+
+span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    border-bottom: 0.5px solid var(--colorWhite);
+    padding-bottom: 10px;
+}
+
+ul div {
+    display: flex;
+}
+
+#eth-icon {
+    height: 17px;
+    width: 10px;
+    margin: 0;
+    margin-right: 5px;
+    padding-top:1.5px;
+}
+
+#li1 {
+    color: var(--cyan);
+}
+
+#clock-icon {
+    height: 17px;
+    width: 17px;
+    padding-right: 5px;
+}
+
+#li2 {
+    color: var(--softBlue);
+    
+}
+
+#bottom-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile-picture {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    margin-right: 15px;
+}
